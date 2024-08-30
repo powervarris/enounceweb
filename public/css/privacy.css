@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/treebg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1500px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: 93.7vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+.user {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-item {
+    display: flex;
+    flex: 1;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.nav-item.active {
+    background-color: #efb135;
+}
+
+.nav-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item:hover a {
+    color: brown;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding: 12px;
+}
+
+.icon-button {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    border: 2px solid;
+    border-color: #03045e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icon-button:hover {
+    background-color: #e0e0e0;
+}
+
+.fa-solid.fa-file-pen {
+    color: #03045e;
+}
+
+.edit-text {
+    font-weight: bold;
+}
+
+.policy-container {
+    background-color: whitesmoke;
+    max-height: 70vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.border {
+    border: 2pt solid black;
+}
+
+.policy-title {
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+}
+
+.policy-text {
+    color: black;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.6;
+}

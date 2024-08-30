@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/treebg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1500px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: 93.7vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+.user {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-item {
+    display: flex;
+    flex: 1;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.nav-item.active {
+    background-color: #efb135;
+}
+
+.nav-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item:hover a {
+    color: brown;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.buttons {
+    padding: 12px;
+    margin-left: 50px;
+}
+
+.icon-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icon-button:hover {
+    background-color: #e0e0e0;
+}
+
+i.fa-solid.fa-circle-plus {
+    color: #4caf50;
+    font-size: 24px;
+}
+
+.fa-solid.fa-arrows-rotate {
+    color: #ff5722;
+    font-size: 24px;
+}
+
+.filter {
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    margin-right: 50px;
+}
+
+.filter .dropdown-toggle {
+    background-color: #fbc982;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.filter .dropdown-toggle i {
+    margin-left: 5px;
+}
+
+.filter .dropdown-toggle:hover {
+    background-color: orange; /* hover color for the toggle button */
+}
+
+.filter .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.filter .dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.filter .dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.filter .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.filter .show {
+    display: block;
+}

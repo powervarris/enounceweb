@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/treebg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1500px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: 93.7vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+.user {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+    padding-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-item {
+    display: flex;
+    flex: 1;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.nav-item.active {
+    background-color: #efb135;
+}
+
+.nav-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item:hover a {
+    color: brown;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left {
+    width: 50%;
+    margin: 20px;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.right {
+    width: 50%;
+    margin: 20px;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.pie-chart {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.table {
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
