@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -13,12 +15,18 @@ class PageController extends Controller
 
     public function announcements()
     {
+        // $ann = Announcement::all();
+        // return view('announcements', compact('ann'));
         return view('announcements');
+
     }
 
     public function notifications()
     {
+        // $notif = Notification::all();
+        // return view('notifications', compact('notif'));
         return view('notifications');
+
     }
 
     public function privacy()
@@ -29,11 +37,6 @@ class PageController extends Controller
     public function logs()
     {
         return view('logs');
-    }
-    
-    public function createann()
-    {
-        return view('createann');
     }
 
     public function login()
